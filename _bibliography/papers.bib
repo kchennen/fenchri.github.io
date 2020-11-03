@@ -1,0 +1,168 @@
+---
+---
+
+% -----------------------------
+% Conference
+% -----------------------------
+@inproceedings{christopoulou-etal-2019-connecting,
+	abbr = {EMNLP 2019},
+	section = "Conference Papers",
+    title = "Connecting the Dots: Document-level Neural Relation Extraction with Edge-oriented Graphs",
+    author = "Christopoulou, Fenia  and
+      Miwa, Makoto  and
+      Ananiadou, Sophia",
+    booktitle = "Proceedings of the Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1498",
+    html = "https://www.aclweb.org/anthology/D19-1498",
+    pdf = "https://www.aclweb.org/anthology/D19-1498.pdf",
+    poster = "poster_emnlp2019_Connecting_the_Dots.pdf",
+    code = "https://github.com/fenchri/edge-oriented-graph",
+    doi = "10.18653/v1/D19-1498",
+    pages = "4925--4936",
+    abstract = "Document-level relation extraction is a complex human process that requires logical inference to extract relationships between named entities in text. Existing approaches use graph-based neural models with words as nodes and edges as relations between them, to encode relations across sentences. These models are node-based, i.e., they form pair representations based solely on the two target node representations. However, entity relations can be better expressed through unique edge representations formed as paths between nodes. We thus propose an edge-oriented graph neural model for document-level relation extraction. The model utilises different types of nodes and edges to create a document-level graph. An inference mechanism on the graph edges enables to learn intra- and inter-sentence relations using multi-instance learning internally. Experiments on two document-level biomedical datasets for chemical-disease and gene-disease associations show the usefulness of the proposed edge-oriented approach.",
+}
+
+@inproceedings{sahu-etal-2019-inter,
+	abbr = {ACL 2019},
+	section = "Conference Papers",
+    title = "Inter-sentence Relation Extraction with Document-level Graph Convolutional Neural Network",
+    author = "Sahu, Sunil Kumar  and
+      Christopoulou, Fenia  and
+      Miwa, Makoto  and
+      Ananiadou, Sophia",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P19-1423",
+    html = "https://www.aclweb.org/anthology/P19-1423",
+    pdf = "https://www.aclweb.org/anthology/P19-1423.pdf",
+    slides = "slides_acl2019_Inter_sentence_Relation_Extraction_with_Graph_CNN.pdf",
+    video = "https://vimeo.com/385201042",
+    doi = "10.18653/v1/P19-1423",
+    pages = "4309--4316",
+    abstract = "Inter-sentence relation extraction deals with a number of complex semantic relationships in documents, which require local, non-local, syntactic and semantic dependencies. Existing methods do not fully exploit such dependencies. We present a novel inter-sentence relation extraction model that builds a labelled edge graph convolutional neural network model on a document-level graph. The graph is constructed using various inter- and intra-sentence dependencies to capture local and non-local dependency information. In order to predict the relation of an entity pair, we utilise multi-instance learning with bi-affine pairwise scoring. Experimental results show that our model achieves comparable performance to the state-of-the-art neural models on two biochemistry datasets. Our analysis shows that all the types in the graph are effective for inter-sentence relation extraction.",
+}
+
+@inproceedings{christopoulou-etal-2018-walk,
+	abbr = {ACL 2018},
+	section = "Conference Papers",
+	title = "A Walk-based Model on Entity Graphs for Relation Extraction",
+	author = "Christopoulou, Fenia  and
+	  Miwa, Makoto  and
+	  Ananiadou, Sophia",
+	booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+	month = jul,
+	year = "2018",
+	address = "Melbourne, Australia",
+	publisher = "Association for Computational Linguistics",
+	url = "https://www.aclweb.org/anthology/P18-2014",
+	html = "https://www.aclweb.org/anthology/P18-2014",
+	pdf = "https://www.aclweb.org/anthology/P18-2014.pdf",
+	code = "https://github.com/fenchri/walk-based-re",
+	poster = "https://www.aclweb.org/anthology/attachments/P18-2014.Poster.pdf",
+	doi = "10.18653/v1/P18-2014",
+	pages = "81--88",
+	abstract = "We present a novel graph-based neural network model for relation extraction. Our model treats multiple pairs in a sentence simultaneously and considers interactions among them. All the entities in a sentence are placed as nodes in a fully-connected graph structure. The edges are represented with position-aware contexts around the entity pairs. In order to consider different relation paths between two entities, we construct up to $l$-length walks between each pair. The resulting walks are merged and iteratively used to update the edge representations into longer walks representations. We show that the model achieves performance comparable to the state-of-the-art systems on the ACE 2005 dataset without using any external tools.",
+}
+
+@inproceedings{christopoulou-etal-2018-mixture,
+	abbr = {ICSC 2018},
+	section = "Conference Papers",
+	author = "Christopoulou, Fenia and Briakou, Eleftheria and Iosif, Elias and Potamianos, Alexandros",
+	booktitle = "Proceedings of the 12th IEEE International Conference on Semantic Computing (ICSC)", 
+	title = "Mixture of Topic-Based Distributional Semantic and Affective Models", 
+	year = "2018",
+	volume={},
+	number={},
+	pages = "203-210",
+	abstract = "Typically, Distributional Semantic Models (DSMs) estimate semantic similarity between words using a single-model, where the multiple senses of polysemous words are conflated in a single representation. Similarly, in textual affective analysis tasks, ambiguous words are usually not treated differently when estimating word affective scores. In this work, a semantic mixture model is proposed enabling the combination of word similarity scores estimated across multiple topic-specific DSMs (TDSMs). Based on the assumption that semantic similarity implies affective similarity, we extend this model to perform sentence-level affect estimation. The proposed model outperforms the baseline approach achieving state-of-the-art results for semantic similarity estimation and sentence-level polarity detection.",
+	keywords = "affective computing;mixture models;natural language processing;text analysis;ambiguous words;word affective scores;semantic mixture model;word similarity scores;affective similarity;sentence-level affect estimation;semantic similarity estimation;sentence-level polarity detection;affective models;multiple senses;polysemous words;single representation;textual affective analysis tasks;multiple topic-specific DSM;topic-based distributional semantic model;Distributional Semantic Models;Semantics;Computational modeling;Mixture models;Training;Feature extraction;Context modeling;Task analysis;Distributional Semantic Models;Topic Modeling;Semantic Similarity;Semantic Mixture Models;Affective Models",
+	doi = "10.1109/ICSC.2018.00036",
+	ISSN = {},
+	month = {Jan},
+	pdf = "https://ieeexplore-ieee-org.manchester.idm.oclc.org/stamp/stamp.jsp?tp=&arnumber=8334459",
+	code = "https://github.com/fenchri/mixture-tdsms",
+	slides = "prez_TDSMs_icsc2018.pdf",
+	poster = "poster_TDSMs_icsc2018.pdf"}
+
+
+% -----------------------------
+% JOURNALS
+% -----------------------------
+@article{christopoulou-etal-2020-adverse,
+	abbr = {JAMIA 2020},
+	section = "Journals",
+    author = "Christopoulou, Fenia and Tran, Thy Thy and Sahu, Sunil Kumar and Miwa, Makoto and Ananiadou, Sophia",
+    title = "{Adverse drug events and medication relation extraction in electronic health records with ensemble deep learning methods}",
+    journal = "Journal of the American Medical Informatics Association",
+    volume = "27",
+    number = "1",
+    pages = "39-46",
+    year = "2020",
+    month = "08",
+    abstract = "{Identification of drugs, associated medication entities, and interactions among them are crucial to prevent unwanted effects of drug therapy, known as adverse drug events. This article describes our participation to the n2c2 shared-task in extracting relations between medication-related entities in electronic health records.We proposed an ensemble approach for relation extraction and classification between drugs and medication-related entities. We incorporated state-of-the-art named-entity recognition (NER) models based on bidirectional long short-term memory (BiLSTM) networks and conditional random fields (CRF) for end-to-end extraction. We additionally developed separate models for intra- and inter-sentence relation extraction and combined them using an ensemble method. The intra-sentence models rely on bidirectional long short-term memory networks and attention mechanisms and are able to capture dependencies between multiple related pairs in the same sentence. For the inter-sentence relations, we adopted a neural architecture that utilizes the Transformer network to improve performance in longer sequences.Our team ranked third with a micro-averaged F1 score of 94.72\\% and 87.65\\% for relation and end-to-end relation extraction, respectively (Tracks 2 and 3). Our ensemble effectively takes advantages from our proposed models. Analysis of the reported results indicated that our proposed approach is more generalizable than the top-performing system, which employs additional training data- and corpus-driven processing techniques.We proposed a relation extraction system to identify relations between drugs and medication-related entities. The proposed approach is independent of external syntactic tools. Analysis showed that by using latent Drug-Drug interactions we were able to significantly improve the performance of non–Drug-Drug pairs in EHRs.}",
+    issn = "1527-974X",
+    doi = "10.1093/jamia/ocz101",
+    url = "https://doi.org/10.1093/jamia/ocz101",
+    html = "https://doi.org/10.1093/jamia/ocz101",
+    pdf = "https://academic.oup.com/jamia/article-pdf/27/1/39/31547966/ocz101.pdf",
+}
+
+
+% -----------------------------
+% Workshop
+% -----------------------------
+@inproceedings{palogiannidi-etal-2016-tweester,
+	abbr = {SemEval 2016},
+	section = "Workshop Papers",
+    title = "Tweester at {S}em{E}val-2016 Task 4: Sentiment Analysis in {T}witter Using Semantic-Affective Model Adaptation",
+    author = "Palogiannidi, Elisavet  and
+      Kolovou, Athanasia  and
+      Christopoulou, Fenia  and
+      Kokkinos, Filippos  and
+      Iosif, Elias  and
+      Malandrakis, Nikolaos  and
+      Papageorgiou, Haris  and
+      Narayanan, Shrikanth  and
+      Potamianos, Alexandros",
+    booktitle = "Proceedings of the 10th International Workshop on Semantic Evaluation ({S}em{E}val)",
+    month = jun,
+    year = "2016",
+    address = "San Diego, California",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/S16-1023",
+    html = "https://www.aclweb.org/anthology/S16-1023",
+    pdf = "https://www.aclweb.org/anthology/S16-1023.pdf",
+    poster = "../assets/pdf/tweester_v3.pdf",
+    doi = "10.18653/v1/S16-1023",
+    pages = "155--163",
+}
+
+
+% -------------------------------
+% Thesese
+% -------------------------------
+
+@thesis{christopoulou-2020-phd,
+section = "Theses",
+author = "Christopoulou, Fenia",
+year = "2020",
+title = "Textual Relation Extraction with Edge-oriented Graph Neural Models",
+pdf = "https://www.research.manchester.ac.uk/portal/files/173349138/FULL_TEXT.PDF",
+publisher="The University of Manchester"}
+
+@thesis{christopoulou-2016-master,
+section = "Theses",
+author = "Christopoulou, Fenia",
+year = "2016",
+title = "Sentence-level Sentiment Analysis using Topic Modeling",
+pdf = "diploma_thesis.pdf",
+publisher="National Technical Univerisity of Athens"}
+
+
