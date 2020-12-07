@@ -2,6 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
+index: 2
 sections: [Conference Papers, Journals, Workshop Papers, Theses]
 nav: true
 ---

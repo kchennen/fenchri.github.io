@@ -2,6 +2,7 @@
 layout: page
 permalink: /talks/
 title: talks
+index: 3
 nav: true
 ---
 
